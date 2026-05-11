@@ -1,0 +1,20 @@
+name: Gitlint
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  gitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Gitlint
+        run: pip install gitlint
+
+      - name: Run Gitlint
+        run: gitlint --commits origin/main..HEAD
