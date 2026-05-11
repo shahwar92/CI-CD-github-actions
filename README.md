@@ -1,2 +1,2 @@
 # CI-CD-github-actions
-Github Actions examples and learnings
+GitHub Actions examples and learnings

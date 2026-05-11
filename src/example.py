@@ -1,2 +1,6 @@
-def add_numbers(a,b):
-    return a+b
+"""Example module for demonstrating linting."""
+
+
+def add_numbers(a: int, b: int) -> int:
+    """Return the sum of two integers."""
+    return a + b
