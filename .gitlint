@@ -1,3 +1,6 @@
 [general]
-# Path to your custom rules
-rules = gitlint_rules.signed_off.SignedOffRequired
+# Run all rules, but you can ignore some if needed
+ignore=body-is-missing
+
+# Enforce signed-off-by rule (R50)
+require-signed-off-by=true
