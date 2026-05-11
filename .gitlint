@@ -1,0 +1,3 @@
+[general]
+# Path to your custom rules
+rules = gitlint_rules.signed_off.SignedOffRequired
