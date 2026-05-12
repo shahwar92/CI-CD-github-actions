@@ -12,9 +12,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # fetch full history
 
       - name: Install Gitlint
         run: pip install gitlint
+
+      - name: Fetch remote main
+        run: git fetch origin main
 
       - name: Run Gitlint
         run: gitlint --commits origin/main..HEAD
